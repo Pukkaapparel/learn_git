@@ -1,0 +1,145 @@
+HP@OLAWALE MINGW64 ~
+$ cd learn_git
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ touch third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ ls
+fourth.txt  third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/HP/learn_git/.git/
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git add third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git commit -m "third.txt"
+[main 04d081c] third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git log
+commit 04d081cefc0a7ddd0ae7816fb8d4f7a0c7ffd702 (HEAD -> main)
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 03:22:03 2025 +0100
+
+    third.txt
+
+commit 625f01ec17edcd967e3a7edf3bb87ac1318281cb
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 02:55:22 2025 +0100
+
+    removing third.txt
+
+commit fc332dcfce9bd434d50f5a4ad8e4bf8a53f8864f
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 02:27:17 2025 +0100
+
+    third.txt
+
+commit af4538b75f71175aad4a2691cfc778a002ec7576
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 20:13:29 2025 +0100
+
+    removed third.txt
+
+commit 8967e434adb9c84a294e685343607d16e924dd8b
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 20:09:45 2025 +0100
+
+    fourth text
+
+commit 5c7b40a04fdedf00726de93dc0fd331881e05d98
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 19:50:47 2025 +0100
+
+    third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git add fourth.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git commit -m "adding fourth.txt"
+On branch main
+nothing to commit, working tree clean
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git rm third.txt
+rm 'third.txt'
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git add .
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git commit -m "Removed third.txt"
+[main ad238c7] Removed third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git log
+commit ad238c740cf9615a65b59f7b2a30627485c0995c (HEAD -> main)
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 03:31:45 2025 +0100
+
+    Removed third.txt
+
+commit 04d081cefc0a7ddd0ae7816fb8d4f7a0c7ffd702
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 03:22:03 2025 +0100
+
+    third.txt
+
+commit 625f01ec17edcd967e3a7edf3bb87ac1318281cb
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 02:55:22 2025 +0100
+
+    removing third.txt
+
+commit fc332dcfce9bd434d50f5a4ad8e4bf8a53f8864f
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Mon Mar 17 02:27:17 2025 +0100
+
+    third.txt
+
+commit af4538b75f71175aad4a2691cfc778a002ec7576
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 20:13:29 2025 +0100
+
+    removed third.txt
+
+commit 8967e434adb9c84a294e685343607d16e924dd8b
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 20:09:45 2025 +0100
+
+    fourth text
+
+commit 5c7b40a04fdedf00726de93dc0fd331881e05d98
+Author: Olawole Adeniran <niranola028@gmail.com>
+Date:   Sun Mar 16 19:50:47 2025 +0100
+
+    third.txt
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git config --global core.pager "cat"
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git config --global --get core.pager
+cat
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$ git config --global --list
+user.email=niranola028@gmail.com
+core.pager=cat
+
+HP@OLAWALE MINGW64 ~/learn_git (main)
+$
